@@ -93,5 +93,8 @@ module.exports = {
             { "extensions": [".jsx", ".tsx"] }
         ],
         "no-shadow": "off",
+        "react/function-component-definition": ['error', {
+            "namedComponents": ["arrow-function", "function-declaration", "function-expression"]
+        }]
     },
 }
