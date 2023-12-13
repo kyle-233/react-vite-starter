@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+import { useBearStore } from './store'
 import viteLogo from '../public/vite.svg'
 import reactLogo from './assets/react.svg'
 import './App.css'
@@ -7,6 +8,7 @@ import { Button } from './components'
 
 const App = (): JSX.Element => {
     const [count, setCount] = useState(0)
+    const bears = useBearStore((state) => state.bears)
 
     return (
         <>
@@ -22,6 +24,7 @@ const App = (): JSX.Element => {
             <div className="card">
                 <button type="button" onClick={() => setCount((count) => count + 1)}>
                     count is {count}
+                    bears are {bears}
                 </button>
                 <Button />
                 <p>

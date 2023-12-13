@@ -22,7 +22,8 @@
             "@/*": ["./src/*"],
             "@tests/*": ["./tests/*"],
             "@config/*": ["./config/*"],
-            "@components/*": ["./src/components/*"]
+            "@components/*": ["./src/components/*"],
+            "@store": ["./src/store"]
         },
         "types": ["vitest/globals"]
     },
