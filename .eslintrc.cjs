@@ -20,6 +20,7 @@ module.exports = {
     },
     plugins: ['react-refresh', '@typescript-eslint', 'prettier'],
     rules: {
+        "import/no-absolute-path": [2, { esmodule: false, commonjs: false, amd: false }],
         'import/prefer-default-export': 0,
         'import/no-unresolved': 'off',
         'import/no-extraneous-dependencies': [

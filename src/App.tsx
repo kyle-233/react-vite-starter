@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { useBearStore } from './store';
-import viteLogo from '../public/vite.svg';
+import viteLogo from '/vite.svg';
 import reactLogo from './assets/react.svg';
 import './App.css';
 import { Button } from './components';
