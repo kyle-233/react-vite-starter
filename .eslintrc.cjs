@@ -52,7 +52,10 @@ module.exports = {
             'error',
             {
                 //按照分组顺序进行排序
-                groups: ['builtin', 'external', 'parent', 'sibling', 'index', 'internal', 'object', 'type'],
+                groups: ['builtin',
+                    'external',
+                    ['internal', 'parent', 'sibling', 'index', 'object', 'type'],
+                    'unknown'],
                 //通过路径自定义分组
                 pathGroups: [
                     {
@@ -77,7 +80,7 @@ module.exports = {
                     },
                 ],
                 //将react包不进行排序，并放在前排，可以保证react包放在第一行
-                pathGroupsExcludedImportTypes: ['react'],
+                pathGroupsExcludedImportTypes: ['builtin'],
                 'newlines-between': 'always', //每个分组之间换行
                 //根据字母顺序对每个组内的顺序进行排序
                 // alphabetize: {
@@ -86,6 +89,9 @@ module.exports = {
                 // },
             },
         ],
+        "no-unused-vars": "off",
+        "react/require-default-props": "off",
+        "react/no-unused-prop-types": "off",
         "react/jsx-uses-react": "off",
         "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension": [
