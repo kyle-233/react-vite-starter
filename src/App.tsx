@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-import { useBearStore } from './store';
+import { Button } from 'components';
+import { useBearStore } from 'store';
 import viteLogo from '/vite.svg';
 import reactLogo from './assets/react.svg';
 import './App.css';
-import { Button } from './components';
 
 const App = (): JSX.Element => {
   const [count, setCount] = useState(0);
