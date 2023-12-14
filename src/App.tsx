@@ -2,8 +2,11 @@ import { useState } from 'react';
 
 import { Button } from 'components';
 import { useBearStore } from 'store';
+import { RouterView } from 'router';
+
 import viteLogo from '/vite.svg';
 import reactLogo from './assets/react.svg';
+
 import './App.css';
 
 const App = (): JSX.Element => {
@@ -38,6 +41,8 @@ const App = (): JSX.Element => {
         </p>
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
+
+      <RouterView />
     </>
   );
 };

@@ -22,6 +22,8 @@
       "tests": ["./tests"],
       "config": ["./config"],
       "components": ["./src/components"],
+      "router": ["./src/router"],
+      "views": ["./src/views"],
       "store": ["./src/store"]
     },
     "types": ["vitest/globals"]
