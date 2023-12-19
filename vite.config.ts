@@ -1,8 +1,8 @@
 /// <reference types="vitest" />
-import path from 'path';
+import path from 'path'
 
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 // import AutoImport from 'unplugin-auto-import/vite'
 
 // https://vitejs.dev/config/
@@ -25,12 +25,17 @@ export default defineConfig({
     modules: {
       scopeBehaviour: 'local',
       generateScopedName: (name: string, filename: string) => {
-        const folder = filename.split('/').at(-2);
-        const cssFileName = filename.split('/').at(-1).split('.').at(0);
-        const fileNameOrFolder = filename.match(/index\.module\.(css|scss|sass)$/) ? folder : cssFileName;
-        return `${fileNameOrFolder}_${name}_${Math.random().toString(36).substr(3, 8)}`;
+        const folder = filename.split('/').at(-2)
+        const cssFileName = filename.split('/').at(-1).split('.').at(0)
+        const fileNameOrFolder = filename.match(/index\.module\.(css|scss|sass)$/) ? folder : cssFileName
+        return `${fileNameOrFolder}_${name}_${Math.random().toString(36).substr(3, 8)}`
       },
       localsConvention: 'camelCase',
+    },
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import './node_modules/tdesign-react/es/style/index.css';`,
+      },
     },
   },
   test: {
@@ -52,4 +57,4 @@ export default defineConfig({
     //     dts: true // generate TypeScript declaration
     // })
   ],
-});
+})
