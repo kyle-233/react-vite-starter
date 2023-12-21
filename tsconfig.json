@@ -23,6 +23,7 @@
       "config": ["./config"],
       "components": ["./src/components"],
       "router": ["./src/router"],
+      "styles": ["./src/styles"],
       "views": ["./src/views"],
       "store": ["./src/store"]
     },

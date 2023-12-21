@@ -1,8 +1,12 @@
-import { BrowserRouter as Router } from 'react-router-dom';
-import { RouterViews } from './baseConfig';
+// import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
+import { RouterViews } from './baseConfig'
+import { AppLayout } from '../layouts'
 
 export const RouterView = (): JSX.Element => (
-  <Router>
-    <RouterViews />
-  </Router>
-);
+  <BrowserRouter>
+    <AppLayout>
+      <RouterViews />
+    </AppLayout>
+  </BrowserRouter>
+)

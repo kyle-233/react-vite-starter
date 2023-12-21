@@ -1,8 +1,7 @@
-import { AppLayout } from './layouts'
-import './App.css'
+import { RouterView } from 'router'
 
 const App = (): JSX.Element => {
-  return <AppLayout />
+  return <RouterView />
 }
 
 export default App

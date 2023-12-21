@@ -15,6 +15,7 @@ export default defineConfig({
     alias: {
       components: path.resolve(__dirname, 'src/components'),
       router: path.resolve(__dirname, 'src/router'),
+      styles: path.resolve(__dirname, 'src/styles'),
       views: path.resolve(__dirname, 'src/views'),
       store: path.resolve(__dirname, 'src/store'),
       tests: path.resolve(__dirname, 'tests'),
@@ -22,6 +23,7 @@ export default defineConfig({
     },
   },
   css: {
+    devSourcemap: true,
     modules: {
       scopeBehaviour: 'local',
       generateScopedName: (name: string, filename: string) => {
@@ -34,7 +36,10 @@ export default defineConfig({
     },
     preprocessorOptions: {
       scss: {
-        additionalData: `@import './node_modules/tdesign-react/es/style/index.css';`,
+        additionalData: `
+            @import './node_modules/tdesign-react/es/style/index.css';
+            @import 'styles/vars.scss';
+            `,
       },
     },
   },

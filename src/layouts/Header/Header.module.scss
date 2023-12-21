@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  column-gap: 24px;
+  padding: $large-padding $extra-padding;
+  align-items: center;
+  background-color: $bg-soft;
+
+  .logo {
+    flex-basis: auto;
+    margin-right: 24px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+    }
+  }
+
+  .menus {
+    flex: 1;
+
+    .list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      column-gap: $medium-padding;
+
+      .item {
+        a {
+          color: #fff;
+          display: inline-block;
+          padding: $small-padding;
+          text-decoration: none;
+
+          &:hover {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .user {
+    flex-basis: auto;
+    color: #fff;
+  }
+}
