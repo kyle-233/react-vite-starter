@@ -37,7 +37,6 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-            @import './node_modules/tdesign-react/es/style/index.css';
             @import 'styles/vars.scss';
             `,
       },
