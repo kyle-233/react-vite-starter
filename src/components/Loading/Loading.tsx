@@ -1,12 +1,8 @@
-import { ReactNode } from 'react';
+
 import styles from './Loading.module.scss';
 
-interface LoadingProps {
-  icon?: ReactNode;
-  label?: string;
-}
 
-export const Loading = (props: LoadingProps): JSX.Element => {
+export const Loading = (): JSX.Element => {
   return (
     <div className={styles.loading}>
       <div className={styles.loader}>
