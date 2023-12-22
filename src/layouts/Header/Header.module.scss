@@ -1,7 +1,7 @@
 .header {
   display: flex;
   column-gap: 24px;
-  padding: $large-padding $extra-padding;
+  padding: $large-padding calc($extra-padding * 3);
   align-items: center;
   background-color: $bg-100;
   color: $text-100;
