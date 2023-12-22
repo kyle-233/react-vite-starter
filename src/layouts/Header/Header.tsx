@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Logo } from 'components'
 import styles from './Header.module.scss'
 
 export const Header = (): JSX.Element => {
@@ -6,7 +7,9 @@ export const Header = (): JSX.Element => {
     <div className={styles.header}>
       {/* Logo */}
       <div className={styles.logo}>
-        <Link to="/">Logo</Link>
+        <Link to="/">
+          <Logo />
+        </Link>
       </div>
 
       {/* Menus */}

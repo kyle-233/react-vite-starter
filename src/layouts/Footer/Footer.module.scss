@@ -7,5 +7,55 @@
   .content {
     padding: 48px $extra-padding;
     font-size: 26px;
+
+    .top{
+      display: flex;
+      justify-content: space-between;
+      
+      .left {
+        flex: 1;
+      }
+
+      .right{
+        flex: 2;
+        display: flex;
+        column-gap: calc($extra-padding * 2);
+
+        .block{
+          flex: 1;
+
+          .title{
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          ul{
+            margin-top: $extra-padding;
+            list-style: none;
+
+            li{
+              font-size: 14px;
+              font-weight: 300;
+              margin-top: $large-padding;
+
+              &:nth-of-type(1) {
+                margin-top: 0;
+              }
+
+              a{
+                color: $text-100;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bottom{
+      margin-top: calc($extra-padding * 2);
+      font-size: 14px;
+      color: $primary-300;
+    }
   }
 }
