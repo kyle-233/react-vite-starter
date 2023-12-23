@@ -5,7 +5,7 @@
   color: $text-100;
 
   .content {
-    padding: 48px $extra-padding;
+    padding: calc($extra-padding * 3) $extra-padding;
     font-size: 26px;
 
     .top{
