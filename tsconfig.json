@@ -25,7 +25,8 @@
       "router": ["./src/router"],
       "styles": ["./src/styles"],
       "views": ["./src/views"],
-      "store": ["./src/store"]
+      "store": ["./src/store"],
+      "assets": ["./src/assets"],
     },
     "types": ["vitest/globals"]
   },

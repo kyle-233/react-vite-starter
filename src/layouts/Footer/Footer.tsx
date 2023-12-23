@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Logo } from 'components'
+import { GithubIcon } from '../../assets/images'
 import styles from './Footer.module.scss'
 
 export const Footer = (): JSX.Element => {
@@ -11,6 +12,15 @@ export const Footer = (): JSX.Element => {
             <Link to="/">
               <Logo />
             </Link>
+            <div className={styles.mediaContent}>
+              <ul className={styles.list}>
+                <li className={styles.item}>
+                  <Link to='https://github.com/kyle-233/react-vite-starter' target='_blank'>
+                    <GithubIcon />
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className={styles.right}>
             <div className={styles.block} />
@@ -33,7 +43,7 @@ export const Footer = (): JSX.Element => {
           </div>
         </div>
         <p className={styles.bottom}>
-          © 2023 Pixel Galaxies. All rights reserved. - Kyle-vessel.vercel.app
+          © 2023 Vessel. All rights reserved. - Kyle-vessel.vercel.app
         </p>
       </div>
     </div>

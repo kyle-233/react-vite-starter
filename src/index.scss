@@ -26,3 +26,23 @@ body {
   height: 100%;
   min-height: 100vh;
 }
+
+.stroke-clear{
+  stroke: $text-100;
+}
+
+.fill-bg{
+  fill: $bg-100;
+}
+
+.fill-primary-clear{
+  fill:  $primary-100;
+}
+
+.fill-accent-clear{
+  fill: $accent-100;
+}
+
+.fill-accent-dull{
+  fill: $accent-200;
+}

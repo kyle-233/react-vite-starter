@@ -18,6 +18,7 @@ export default defineConfig({
       styles: path.resolve(__dirname, 'src/styles'),
       views: path.resolve(__dirname, 'src/views'),
       store: path.resolve(__dirname, 'src/store'),
+      assets: path.resolve(__dirname, 'src/assets'),
       tests: path.resolve(__dirname, 'tests'),
       config: path.resolve(__dirname, 'config'),
     },
