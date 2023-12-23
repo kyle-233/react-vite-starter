@@ -27,18 +27,19 @@ export default defineConfig({
     devSourcemap: true,
     modules: {
       scopeBehaviour: 'local',
-      generateScopedName: (name: string, filename: string) => {
-        const folder = filename.split('/').at(-2)
-        const cssFileName = filename.split('/').at(-1).split('.').at(0)
-        const fileNameOrFolder = filename.match(/index\.module\.(css|scss|sass)$/) ? folder : cssFileName
-        return `${fileNameOrFolder}_${name}_${Math.random().toString(36).substr(3, 8)}`
-      },
+      // generateScopedName: (name: string, filename: string) => {
+      //   const folder = filename.split('/').at(-2)
+      //   const cssFileName = filename.split('/').at(-1).split('.').at(0)
+      //   const fileNameOrFolder = filename.match(/index\.module\.(css|scss|sass)$/) ? folder : cssFileName
+      //   return `${fileNameOrFolder}_${name}_${Math.random().toString(36).substr(3, 8)}`
+      // },
+      generateScopedName: '[name]_[local]_[hash:base64:6]',
       localsConvention: 'camelCase',
     },
     preprocessorOptions: {
       scss: {
         additionalData: `
-            @import 'styles/vars.scss';
+            @import 'styles/vars.scss'; 
             `,
       },
     },

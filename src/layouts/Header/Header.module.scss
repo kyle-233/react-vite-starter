@@ -1,4 +1,6 @@
 .header {
+  position: sticky;
+  top: 0;
   display: flex;
   column-gap: 24px;
   padding: $large-padding calc($extra-padding * 3);
@@ -45,5 +47,9 @@
 
   .user {
     flex-basis: auto;
+
+    display: flex;
+    column-gap: $large-padding;
+    align-items: center;
   }
 }
