@@ -7,7 +7,7 @@
     margin: 0 auto;
 
     .hero {
-      padding: $medium-padding 0;
+      padding: calc($medium-padding * 3) 0;
       display: flex;
       column-gap: calc($extra-padding * 3);
       justify-content: space-between;
