@@ -3,7 +3,7 @@ import { useRoutes } from 'react-router-dom';
 import { Loading } from '../components';
 import { AuthRouter } from './AuthConfig';
 import { RouterItemProps } from './type';
-import { commonRouter } from './commonRouter';
+import { commonRouter, outerRouter } from './commonRouter';
 // import { roleRouter } from './roleRouter';
 
 const packingRouter = (routers: RouterItemProps<ComponentType>[], isRoleRouter: boolean) => {
@@ -36,3 +36,5 @@ export const routerMenus = [
 ];
 
 export const RouterViews = () => useRoutes(routerMenus);
+
+export const OuterViews = () => useRoutes([...packingRouter(outerRouter, false)])

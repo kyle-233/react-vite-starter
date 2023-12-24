@@ -1,4 +1,4 @@
-import styles from './index.module.scss';
+import styles from './NotFound.module.scss';
 
 const NotFound = (): JSX.Element => (
   <section className={styles.notFound}>

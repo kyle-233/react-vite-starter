@@ -43,7 +43,7 @@ export const Footer = (): JSX.Element => {
           </div>
         </div>
         <p className={styles.bottom}>
-          © 2023 Vessel. All rights reserved. - Kyle-vessel.vercel.app
+          © 2023 Vessel Galaxies. All rights reserved. - Kyle-vessel.vercel.app
         </p>
       </div>
     </div>
