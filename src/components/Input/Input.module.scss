@@ -1,7 +1,7 @@
 .input{
     width: 100%;
 
-    :global{
+    :global {
         .t-input{
             padding: 0 12px;
             height: unset;
@@ -15,6 +15,7 @@
 
             &:hover:not(:disabled):not(.t-input--focused) {
                 box-shadow: rgb(232, 237, 235) 0px 0px 0px 3px;
+                border-color: $bg-300;
             }
 
             input {
