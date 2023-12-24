@@ -1,0 +1,121 @@
+.register {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+  
+    .content {
+      order: 2;
+      flex-basis: auto;
+      padding: calc($extra-padding * 3) calc($extra-padding * 5) calc($extra-padding * 3) calc($extra-padding * 2);
+  
+      .title{
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 400;
+        margin: 32px 0 16px;
+        color: $accent-200;
+      }
+  
+      .noAccount{
+        margin-bottom: 32px;
+        font-size: 18px;
+        font-weight: 800;
+  
+        a {
+          text-decoration: none;
+          color: $accent-100;
+        }
+      }
+  
+      .methods {
+  
+        .button{
+          height: 52px;
+          margin-top: 16px;
+          border-radius: 6px;
+          box-shadow: lightgray 0px 1px;
+          border-color: $bg-300;
+  
+          &:hover {
+            box-shadow: rgb(232, 236, 235) 0px 0px 0px 3px;
+            border-color: $bg-300;
+            color: rgb(0, 30, 43);
+            background-color: rgb(255, 255, 255);
+          }
+  
+          .inner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .label {
+              padding-right: 16px;
+              color: $text-200;
+            }
+          }
+        }
+      }
+  
+      .divider{
+        font-size: 13px;
+        color: rgb(92, 108, 117);
+      }
+  
+      .form {
+        .formItem { 
+          width: 100%;
+  
+          :global {
+            .t-form__label{
+              min-height: unset;
+              line-height: unset;
+  
+              label {
+                height: 16px;
+                font-size: 13px;
+                font-weight: 800;
+                line-height: 16px;
+                font-weight: 700;
+                letter-spacing: .02em;
+              }
+            }
+  
+            .t-form__controls {
+              margin-top: 5px;
+          }
+          }
+        }
+  
+        .submit {
+          margin-top: 40px;
+          background-color: $accent-200;
+  
+          &:hover {
+            color: rgb(255, 255, 255);
+            background-color: $accent-200;
+            border-color: $accent-200;
+            box-shadow: rgba($accent-200, 0.2) 0px 0px 0px 3px;
+          }
+  
+          :global{
+            .t-ripple {
+              display: none;
+              background-color: transparent !important;
+            }
+          }
+        }
+      }
+    }
+
+    .bg {
+      flex: 1;
+      width: 385px;
+      height: 100vh;
+      order: 1;
+      background-image: url(	https://assets.mongodb-cdn.com/mms/static/images/auth/login_desktop.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+}

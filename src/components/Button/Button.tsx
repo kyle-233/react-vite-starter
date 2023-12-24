@@ -1,17 +1,12 @@
+import { Button as TButon, ButtonProps } from 'tdesign-react'
 import styles from './Button.module.scss';
 
-interface ButtonProps {
-  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  loading?: boolean;
-  size?: 'small' | 'normal';
-  disabled?: boolean;
-}
 
-export const Button = (props: ButtonProps) => {
-  const { onClick } = props;
+export const Button = ({ children, className, ...props }: ButtonProps) => {
+
   return (
-    <button className={styles.button} type="button" onClick={onClick}>
-      Click
-    </button>
+    <TButon className={`${styles.button} ${className ? className : ''}`} {...props}>
+      {children}
+    </TButon>
   );
 };

@@ -1,17 +1,16 @@
+import { Link } from 'react-router-dom'
+import { Divider, Form } from 'tdesign-react'
+import { Button, Input } from 'components'
+import styles from './Register.module.scss'
 
-import { Link } from 'react-router-dom';
-import { Divider, Form } from 'tdesign-react';
-import { Button, Input } from 'components';
-import styles from './Login.module.scss';
+const { FormItem }  = Form
 
-const { FormItem } = Form;
-
-const Login = (): JSX.Element => {  
+const Register = () => {
   return (
-    <section className={styles.login}>
+    <section className={styles.register}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Log in to your account</h1>
-        <h3 className={styles.noAccount}>Dont&apos;t have an account? <Link to='/register'>Sign Up</Link></h3>
+        <h1 className={styles.title}>Create your account</h1>
+        <h3 className={styles.noAccount}>Have an account? <Link to='/login'>Sign In</Link></h3>
         <div className={styles.methods}>
           <Button className={styles.button} block theme="default" variant="outline">
             <div className={styles.inner}>
@@ -41,12 +40,9 @@ const Login = (): JSX.Element => {
           <FormItem name="password" label="Password" className={styles.formItem}>
             <Input type="password" placeholder="请输入密码" />
           </FormItem>
-          <div className={styles.forgetPassword}>
-            <Link to='/reset'>Forgot Password?</Link>
-          </div>
           <FormItem>
             <Button theme="primary" type="submit" block className={styles.submit}>
-              Sign In
+              Sign Up
             </Button>
           </FormItem>
       </Form>
@@ -56,4 +52,4 @@ const Login = (): JSX.Element => {
   )
 }
 
-export default Login;
+export default Register

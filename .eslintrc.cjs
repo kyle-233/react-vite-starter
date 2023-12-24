@@ -25,6 +25,7 @@ module.exports = {
         "import/no-absolute-path": [2, { esmodule: false, commonjs: false, amd: false }],
         'import/prefer-default-export': 0,
         'import/no-unresolved': 'off',
+        "react/jsx-props-no-spreading": 'off',
         'import/no-extraneous-dependencies': [
             0,
             {

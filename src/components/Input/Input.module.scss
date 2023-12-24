@@ -1,0 +1,27 @@
+.input{
+    width: 100%;
+
+    :global{
+        .t-input{
+            padding: 0 12px;
+            height: unset;
+            border-radius: 6px;
+            border-color: $bg-300;
+
+            &.t-input--focused {
+                box-shadow: rgba($accent-200, 1) 0px 0px 0px 3px;
+                border-color: rgb(255, 255, 255);
+            }
+
+            &:hover:not(:disabled):not(.t-input--focused) {
+                box-shadow: rgb(232, 237, 235) 0px 0px 0px 3px;
+            }
+
+            input {
+                height: 36px;
+                line-height: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+}
