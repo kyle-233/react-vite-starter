@@ -2,8 +2,10 @@
   height: 38px;
   border-radius: 6px;
   
-  span {
-    height: 38px;
-    line-height: 38px;
+  :global{
+    span {
+      height: 38px;
+      line-height: 38px;
+    }
   }
 }
