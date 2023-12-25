@@ -8,7 +8,7 @@
 
     padding: calc($extra-padding * 3);
 
-    .title{
+    .title {
       font-size: 32px;
       line-height: 40px;
       font-weight: 400;
@@ -16,7 +16,7 @@
       color: $accent-200;
     }
 
-    .noAccount{
+    .noAccount {
       margin-bottom: 32px;
       font-size: 18px;
       font-weight: 800;
@@ -28,8 +28,7 @@
     }
 
     .methods {
-
-      .button{
+      .button {
         height: 52px !important;
         margin-top: 16px;
         border-radius: 6px;
@@ -43,11 +42,11 @@
           background-color: rgb(255, 255, 255);
         }
 
-        .inner{
+        .inner {
           display: flex;
           align-items: center;
           justify-content: center;
-          
+
           .label {
             padding-right: 16px;
             color: $text-200;
@@ -56,17 +55,17 @@
       }
     }
 
-    .divider{
+    .divider {
       font-size: 13px;
       color: rgb(92, 108, 117);
     }
 
     .form {
-      .formItem { 
+      .formItem {
         width: 100%;
 
         :global {
-          .t-form__label{
+          .t-form__label {
             min-height: unset;
             line-height: unset;
 
@@ -76,13 +75,13 @@
               font-weight: 800;
               line-height: 16px;
               font-weight: 700;
-              letter-spacing: .02em;
+              letter-spacing: 0.02em;
             }
           }
 
           .t-form__controls {
             margin-top: 5px;
-        }
+          }
         }
       }
 
@@ -97,7 +96,7 @@
           box-shadow: rgba($accent-200, 0.2) 0px 0px 0px 3px;
         }
 
-        :global{
+        :global {
           .t-ripple {
             display: none;
             background-color: transparent !important;
@@ -105,11 +104,11 @@
         }
       }
 
-      .forgetPassword{
+      .forgetPassword {
         margin: 40px 0;
         text-align: right;
 
-        a{
+        a {
           text-decoration: none;
           font-size: 14px;
           color: $accent-100;
@@ -118,7 +117,7 @@
       }
     }
   }
-   
+
   .bg {
     flex: 1;
     background-image: url(https://assets.mongodb-cdn.com/mms/static/images/auth/login_promo_desktop_v20231204.svg);

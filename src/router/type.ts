@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode } from 'react'
 
 export enum USER_ROLES {
   ADMIN = 'admin',
@@ -6,11 +6,11 @@ export enum USER_ROLES {
 }
 
 export interface RouterItemProps<T> {
-  path: string;
-  name?: string;
-  roles?: USER_ROLES[];
-  redirect?: string;
-  icon?: ReactNode;
-  element: T;
-  children?: RouterItemProps<T>[];
+  path: string
+  name?: string
+  roles?: USER_ROLES[]
+  redirect?: string
+  icon?: ReactNode
+  element: T
+  children?: RouterItemProps<T>[]
 }

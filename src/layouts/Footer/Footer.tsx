@@ -15,7 +15,7 @@ export const Footer = (): JSX.Element => {
             <div className={styles.mediaContent}>
               <ul className={styles.list}>
                 <li className={styles.item}>
-                  <Link to='https://github.com/kyle-233/react-vite-starter' target='_blank'>
+                  <Link to="https://github.com/kyle-233/react-vite-starter" target="_blank">
                     <GithubIcon />
                   </Link>
                 </li>
@@ -28,23 +28,31 @@ export const Footer = (): JSX.Element => {
             <div className={styles.block}>
               <p className={styles.title}>Information</p>
               <ul>
-                <li><Link to="#/">Post guidelines</Link></li>
+                <li>
+                  <Link to="#/">Post guidelines</Link>
+                </li>
               </ul>
             </div>
             <div className={styles.block}>
               <p className={styles.title}>Legal</p>
               <ul>
-                <li><Link to="#/">Terms and Conditions</Link></li>
-                <li><Link to="#/">Privacy policy</Link></li>
-                <li><Link to="#/">Cookie policy</Link></li>
-                <li><Link to="#/">Disclaimer</Link></li>
+                <li>
+                  <Link to="#/">Terms and Conditions</Link>
+                </li>
+                <li>
+                  <Link to="#/">Privacy policy</Link>
+                </li>
+                <li>
+                  <Link to="#/">Cookie policy</Link>
+                </li>
+                <li>
+                  <Link to="#/">Disclaimer</Link>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        <p className={styles.bottom}>
-          © 2023 Vessel Galaxies. All rights reserved. - Kyle-vessel.vercel.app
-        </p>
+        <p className={styles.bottom}>© 2023 Vessel Galaxies. All rights reserved. - Kyle-vessel.vercel.app</p>
       </div>
     </div>
   )

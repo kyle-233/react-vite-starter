@@ -1,10 +1,10 @@
-import { create } from 'zustand';
-import { createJSONStorage, devtools, persist } from 'zustand/middleware';
-import { immer } from 'zustand/middleware/immer';
+import { create } from 'zustand'
+import { createJSONStorage, devtools, persist } from 'zustand/middleware'
+import { immer } from 'zustand/middleware/immer'
 
 interface BearState {
-  bears: number;
-  increase: (by: number) => void;
+  bears: number
+  increase: (by: number) => void
 }
 
 // Create your store, which includes both state and (optionally) actions
@@ -20,4 +20,4 @@ export const useBearStore = create<BearState>()(
       ),
     ),
   ),
-);
+)

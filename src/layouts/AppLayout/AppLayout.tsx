@@ -24,19 +24,17 @@ export const AppLayout = ({ children }: AppLayoutProps): JSX.Element => {
   }, [pathname])
   return (
     <div className={styles.appLayout}>
-      {
-        headerVisible && 
+      {headerVisible && (
         <header className={styles.header}>
           <Header />
         </header>
-      }
+      )}
       <main className={styles.main}>{children}</main>
-      {
-        footerVisible &&
+      {footerVisible && (
         <footer className={styles.footer}>
           <Footer />
         </footer>
-      }
+      )}
     </div>
   )
 }

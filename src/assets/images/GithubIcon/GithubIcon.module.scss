@@ -1,20 +1,19 @@
 .btn {
-    display: grid;
-    place-items: center;
-    border: none;
-    background: transparent;
-    border-radius: 50%;
-    cursor: pointer;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
 
-    &:hover {
+  svg {
+    transition: transform 0.5s;
+  }
 
-        svg {
-            transform: scale(0.9);
-            fill: $accent-100;
-        }
-      }
-
+  &:hover {
     svg {
-        transition: transform 0.5s;
+      transform: scale(0.9);
+      fill: $accent-100;
     }
+  }
 }

@@ -4,7 +4,9 @@ module.exports = {
     rules: {
         indentation: 2,
         'function-url-quotes': 'never',
-        // "selector-class-pattern": '^[a-z0-9]+(-[a-z0-9]+)*$',
-        // "dollar-variable-pattern": [new RegExp('[a - z][a - zA - Z] + /*'), { "ignore": "global" }],
+        'keyframes-name-pattern': null,
+        "selector-pseudo-class-no-unknown": [true, ":global"]
+        // "selector-class-pattern": null,
+        // "dollar-variable-pattern": null,
     }
 }

@@ -1,23 +1,23 @@
-.button{
-    height: 32px;
-    padding: 0 $medium-padding;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $bg-300;
-    border-radius: 10px;
-    cursor: pointer;
-    transition-duration: .3s;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
-    border: none;
-    color: $text;
+.button {
+  height: 32px;
+  padding: 0 $medium-padding;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-300;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+  border: none;
+  color: $text;
 
-    &:hover {
-        background-color: $primary-200;
-    }
+  &:hover {
+    background-color: $primary-200;
+  }
 
-    &:active {
-        transform: scale(0.95);
-    }
+  &:active {
+    transform: scale(0.95);
+  }
 }

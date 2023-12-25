@@ -8,17 +8,17 @@
     padding: calc($extra-padding * 3) $extra-padding;
     font-size: 26px;
 
-    .top{
+    .top {
       display: flex;
       justify-content: space-between;
-      
+
       .left {
         flex: 1;
 
-        .mediaContent{
+        .mediaContent {
           margin-top: $extra-padding;
 
-          .list{
+          .list {
             list-style: none;
             display: flex;
             column-gap: $large-padding;
@@ -26,24 +26,24 @@
         }
       }
 
-      .right{
+      .right {
         flex: 2;
         display: flex;
         column-gap: calc($extra-padding * 2);
 
-        .block{
+        .block {
           flex: 1;
 
-          .title{
+          .title {
             font-size: 16px;
             font-weight: 600;
           }
 
-          ul{
+          ul {
             margin-top: $extra-padding;
             list-style: none;
 
-            li{
+            li {
               font-size: 14px;
               font-weight: 300;
               margin-top: $large-padding;
@@ -52,7 +52,7 @@
                 margin-top: 0;
               }
 
-              a{
+              a {
                 color: $text-100;
                 text-decoration: none;
               }
@@ -62,7 +62,7 @@
       }
     }
 
-    .bottom{
+    .bottom {
       margin-top: calc($extra-padding * 2);
       font-size: 14px;
       color: $primary-300;
