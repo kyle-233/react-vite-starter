@@ -64,7 +64,7 @@ export default {
 
 ```
 master # 主分支
-release # 预发布分支
+pre_release # 预发布分支
 test # 测试分支
 release/[function|page]_[Time] # 开发分支
 
