@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Bell, Login, Logo } from 'components'
+import { Bell, Language, Login, Logo, Theme, Wallet } from 'components'
 import styles from './Header.module.scss'
 
 export const Header = (): JSX.Element => {
@@ -30,7 +30,10 @@ export const Header = (): JSX.Element => {
       {/* User */}
       <div className={styles.user}>
         <Login />
+        <Wallet />
         <Bell />
+        <Theme />
+        <Language />
       </div>
     </div>
   )
