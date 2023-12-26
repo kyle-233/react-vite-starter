@@ -1,4 +1,4 @@
-import { Helmet } from 'components'
+import { Helmet, Card } from 'components'
 import styles from './Home.module.scss'
 
 const Home = () => {
@@ -374,6 +374,15 @@ const Home = () => {
                   </g>
                 </g>
               </svg>
+            </div>
+          </div>
+          <div className={styles.intro}>
+            <h1 className={styles.title}>Introduce</h1>
+            <div className={styles.content}>
+              <Card />
+              <Card />
+              <Card />
+              <Card />
             </div>
           </div>
         </div>

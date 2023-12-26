@@ -45,5 +45,45 @@
         margin-right: $extra-padding;
       }
     }
+
+    .intro {
+      padding: calc($extra-padding * 3) 0;
+
+      .title {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto calc($extra-padding * 3);
+
+        &::before {
+          content: '';
+          left: 0;
+          margin-left: -60px;
+          top: 50%;
+          width: 50px;
+          position: absolute;
+          height: 3px;
+          border-radius: 2px;
+          background-color: $primary-300;
+        }
+
+        &::after {
+          content: '';
+          right: 0;
+          margin-right: -60px;
+          top: 50%;
+          width: 50px;
+          position: absolute;
+          height: 3px;
+          border-radius: 2px;
+          background-color: $primary-300;
+        }
+      }
+
+      .content {
+        display: flex;
+        column-gap: $extra-padding;
+        justify-content: space-around;
+      }
+    }
   }
 }
