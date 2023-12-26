@@ -2,6 +2,21 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 0 100em 100em 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-radius: 100em;
+    background-color: #b7bdc6;
+  }
 }
 
 body {

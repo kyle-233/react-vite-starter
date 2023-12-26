@@ -3,7 +3,7 @@ import styles from './Language.module.scss'
 export const Language = () => {
   return (
     <button type="button" className={styles.button} aria-label="Language">
-      <svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg" className={styles.language}>
+      <svg height="18" viewBox="0 0 48 48" width="18" xmlns="http://www.w3.org/2000/svg" className={styles.language}>
         <path d="M0 0h48v48H0z" fill="none" />
         <path
           fill="white"
