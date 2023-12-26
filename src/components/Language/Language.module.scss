@@ -24,3 +24,29 @@
     transform: scale(0.8);
   }
 }
+
+:global {
+  .t-dropdown {
+    border: unset;
+
+    .t-dropdown__menu {
+      padding: $medium-padding;
+
+      .t-dropdown__item {
+        padding: $small-padding $medium-padding;
+
+        .t-ripple {
+          background-color: rgba($accent-100, 0.3);
+        }
+        &:hover {
+          background-color: transparent !important;
+          font-weight: 800;
+          color: $accent-200;
+        }
+        &:active {
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+}
