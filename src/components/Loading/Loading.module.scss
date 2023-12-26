@@ -1,8 +1,7 @@
 .loading {
   width: 100%;
   height: inherit;
-  position: absolute;
-  inset: 0;
+  min-height: 500px;
   display: grid;
   place-content: center;
 }
