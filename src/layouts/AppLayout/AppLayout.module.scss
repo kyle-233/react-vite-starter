@@ -13,6 +13,7 @@
   .main {
     flex: 1;
     position: relative;
+    @include bgColor(bg-100);
   }
 
   .footer {

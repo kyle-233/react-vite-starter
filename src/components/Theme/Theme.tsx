@@ -1,10 +1,31 @@
+import { useState } from 'react'
 import styles from './Theme.module.scss'
 
 export const Theme = () => {
+  const initTheme = () => {
+    const theme = localStorage.getItem('theme') || 'light'
+    return theme
+  }
+  const [theme, setTheme] = useState(initTheme())
+
   return (
     <button type="button" aria-label="Theme" className={styles.button}>
       <label className={styles.toggle} htmlFor="switch">
-        <input id="switch" className={styles.input} type="checkbox" />
+        <input
+          id="switch"
+          className={styles.input}
+          type="checkbox"
+          onChange={() => {
+            const curTheme = theme === 'light' ? 'dark' : 'light'
+            localStorage.setItem('theme', curTheme)
+            const { body } = document
+            body.setAttribute('data-theme', curTheme)
+            setTheme((pre) => {
+              return pre === 'light' ? 'dark' : 'light'
+            })
+          }}
+          checked={theme === 'light' ? true : false}
+        />
         <div className={`${styles.icon} ${styles.iconMoon}`}>
           <svg height="15" width="15" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path

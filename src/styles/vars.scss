@@ -10,11 +10,3 @@ $extra-padding: 24px;
 $large-padding: 18px;
 $medium-padding: 12px;
 $small-padding: 8px;
-
-body[data-theme='light'] {
-  @import './light.scss';
-}
-
-body[data-theme='dark'] {
-  @import './dark.scss';
-}

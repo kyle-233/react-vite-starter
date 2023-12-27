@@ -44,21 +44,31 @@ body {
 }
 
 .stroke-clear {
-  stroke: $text-100;
+  @include themeify {
+    stroke: themed(text-100) !important;
+  }
 }
 
 .fill-bg {
-  fill: $bg-100;
+  @include themeify {
+    fill: themed(bg-100) !important;
+  }
 }
 
 .fill-primary-clear {
-  fill: $primary-100;
+  @include themeify {
+    fill: themed(primary-100) !important;
+  }
 }
 
 .fill-accent-clear {
-  fill: $accent-100;
+  @include themeify {
+    fill: themed(accent-100) !important;
+  }
 }
 
 .fill-accent-dull {
-  fill: $accent-200;
+  @include themeify {
+    fill: themed(accent-200) !important;
+  }
 }
