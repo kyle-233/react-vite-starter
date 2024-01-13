@@ -1,12 +1,29 @@
 import { useState } from 'react'
 import styles from './Theme.module.scss'
 
+type ThemeProps = 'light' | 'dark'
+
 export const Theme = () => {
-  const initTheme = () => {
-    const theme = localStorage.getItem('theme') || 'light'
+  const setBodyTheme = (theme: ThemeProps) => {
+    const { body } = document
+    body.setAttribute('data-theme', theme)
+  }
+  const initTheme = (): ThemeProps => {
+    const theme = (localStorage.getItem('theme') || 'light') as ThemeProps
+    setBodyTheme(theme)
     return theme
   }
-  const [theme, setTheme] = useState(initTheme())
+  const [theme, setTheme] = useState<ThemeProps>(initTheme())
+
+  const toogleTheme = () => {
+    const curTheme = theme === 'light' ? 'dark' : 'light'
+    const { body } = document
+    localStorage.setItem('theme', curTheme)
+    body.setAttribute('data-theme', curTheme)
+    setTheme((pre) => {
+      return pre === 'light' ? 'dark' : 'light'
+    })
+  }
 
   return (
     <button type="button" aria-label="Theme" className={styles.button}>
@@ -15,15 +32,7 @@ export const Theme = () => {
           id="switch"
           className={styles.input}
           type="checkbox"
-          onChange={() => {
-            const curTheme = theme === 'light' ? 'dark' : 'light'
-            localStorage.setItem('theme', curTheme)
-            const { body } = document
-            body.setAttribute('data-theme', curTheme)
-            setTheme((pre) => {
-              return pre === 'light' ? 'dark' : 'light'
-            })
-          }}
+          onChange={toogleTheme}
           checked={theme === 'light' ? true : false}
         />
         <div className={`${styles.icon} ${styles.iconMoon}`}>
