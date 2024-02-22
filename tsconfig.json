@@ -26,7 +26,11 @@
       "styles": ["./src/styles"],
       "views": ["./src/views"],
       "store": ["./src/store"],
-      "assets": ["./src/assets"]
+      "assets": ["./src/assets"],
+      "tools": ["./src/tools"],
+      "service": ["./src/service"],
+      "apis": ["./src/apis"],
+      "hooks": ["./src/hooks"]
     },
     "types": ["vitest/globals"]
   },

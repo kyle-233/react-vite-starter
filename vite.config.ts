@@ -21,6 +21,10 @@ export default defineConfig({
       assets: path.resolve(__dirname, 'src/assets'),
       tests: path.resolve(__dirname, 'tests'),
       config: path.resolve(__dirname, 'config'),
+      tools: path.resolve(__dirname, 'tools'),
+      service: path.resolve(__dirname, 'service'),
+      apis: path.resolve(__dirname, 'apis'),
+      hooks: path.resolve(__dirname, 'hooks'),
     },
   },
   css: {
